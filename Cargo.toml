@@ -1,0 +1,22 @@
+[package]
+name = 'iwd-playground'
+version = '0.1.0'
+edition = '2021'
+
+[dependencies]
+anyhow = '1'
+
+[dependencies.async-std]
+version = '1.12.0'
+features = ['attributes']
+
+[dependencies.serde]
+version = '1.0.197'
+features = ['derive']
+
+[dependencies.zbus]
+version = '4.1.2'
+
+[[bin]]
+name = 'iwd-get-networks'
+path = 'main.rs'
